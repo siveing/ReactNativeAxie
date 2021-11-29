@@ -45,13 +45,13 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
             })} */}
 
             {/* list object */}
-            <ListDasboard item={dataDashboard.total_axies} index={'total_axies'}/>
-            <ListDasboard item={dataDashboard.total_joined} index={'total_joined'}/>
-            <ListDasboard item={dataDashboard.total_manager} index={'total_manager'}/>
-            <ListDasboard item={dataDashboard.total_ronin} index={'total_ronin'}/>
-            <ListDasboard item={dataDashboard.total_scholar} index={'total_scholar'}/>
-            <ListDasboard item={dataDashboard.total_slp} index={'total_slp'}/>
-                
+            <ListDasboard item={dataDashboard.total_axies} data={'Axies'}/>
+            <ListDasboard item={dataDashboard.total_joined} data={'Players Joined'}/>
+            <ListDasboard item={dataDashboard.total_manager} data={'Managers'}/>
+            <ListDasboard item={dataDashboard.total_scholar} data={'Scholars'}/>
+            <ListDasboard item={dataDashboard.total_game} data={'In Game'} value={'game'}/>
+            <ListDasboard item={dataDashboard.total_ronin} data={'In Ronin'} value={'ronin'}/>
+            <ListDasboard item={dataDashboard.total_slp} data={'Total'} value={'total'}/>
         </View>
     );
 }

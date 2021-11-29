@@ -14,7 +14,7 @@ export default function ModalScreen(props) {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <View style={styles.row}>
         <Text style={styles.text}>
-          Today : {result.totalSlp} <TabBarIcon style={styles.icon} name="tint" color={'pink'}/>  
+          Today : {result.todaySlp} <TabBarIcon style={styles.icon} name="tint" color={'pink'}/>  
         </Text>
         <Text style={styles.text}>
           Yesterday : {result.yesterdaySlp} <TabBarIcon style={styles.icon} name="tint" color={'pink'}/>  
